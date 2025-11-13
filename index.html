@@ -26,10 +26,14 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto gap-3">
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav gap-3">
         <li class="nav-item"><a class="nav-link" href="QuienesSomos.html">¿Qué se ofrece?</a></li>
       </ul>
+
+      <a href="auth.html" class="btn btn-outline-light ms-3">
+        🔐 Sign In / Sign Up
+      </a>
 
       <button id="toggle-dark" class="btn btn-light ms-3">Modo oscuro</button>
     </div>
@@ -37,7 +41,7 @@
 </nav>
 
 
-<!-- HERO SECTION -->
+<!-- HERO -->
 <section class="hero">
   <div class="container">
     <h1 class="display-4 fw-bold text-primary">InclusiRoute</h1>
@@ -52,10 +56,14 @@
 </section>
 
 
+<footer class="bg-primary text-white text-center py-4 mt-5">
+  InclusiRoute © 2025 – Prototipo de transporte inclusivo
+</footer>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- MODO OSCURO (FUNCIONA EN TODAS LAS PÁGINAS) -->
+<!-- MODO OSCURO -->
 <script>
   const toggleBtn = document.getElementById("toggle-dark");
   const html = document.documentElement;
