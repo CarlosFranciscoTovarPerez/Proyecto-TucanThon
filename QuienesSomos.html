@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>InclusiRoute – Featured</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .featured {
+        background-color: #212529;
+        border-radius: 0.75rem;
+        padding: 3rem;
+      }
+      .thumb {
+        background-color: #495057;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+      .card-custom {
+        background-color: #1c1f22 !important;
+        border-radius: .75rem;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+
+  <body>
+
+<!-- 🔵 NAVBAR (EL MISMO QUE TIENES) -->
+<nav class="navbar navbar-expand-lg bg-primary navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">InclusiRoute</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto gap-3">
+        <li class="nav-item"><a class="nav-link" href="#que-es">¿Qué es?</a></li>
+        <li class="nav-item"><a class="nav-link" href="#turista">Turista</a></li>
+        <li class="nav-item"><a class="nav-link" href="#funciones">Funciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="#chofer">Chofer</a></li>
+        <li class="nav-item"><a class="nav-link" href="#demo">Demo</a></li>
+      </ul>
+
+      <button id="toggle-dark" class="btn btn-light ms-3">Modo oscuro</button>
+    </div>
+  </div>
+</nav>
+
+<!-- 🔵 FEATURED HERO -->
+<div class="container my-5">
+  <div class="featured text-white shadow-sm">
+    <h1 class="display-5 fw-bold">Title of a longer<br>featured blog post</h1>
+
+    <p class="mt-3 fs-5">
+      Multiple lines of text that form the lede, informing new readers quickly
+      and efficiently about what’s most interesting in this post’s contents.
+    </p>
+
+    <a href="#" class="fw-bold text-white text-decoration-underline">Continue reading...</a>
+  </div>
+</div>
+
+<!-- 🔵 TWO CARDS BELOW (SIDE BY SIDE) -->
+<div class="container">
+  <div class="row g-4">
+
+    <!-- Card 1 -->
+    <div class="col-md-6">
+      <div class="card-custom d-flex">
+        <div class="p-4 flex-grow-1">
+          <strong class="text-primary d-block">World</strong>
+          <h4 class="fw-bold mt-2">Featured post</h4>
+          <small class="text-muted">Nov 12</small>
+          <p class="mt-3">
+            This is a wider card with supporting text below as a natural lead-in to additional content.
+          </p>
+          <a href="#" class="text-decoration-none">Continue reading →</a>
+        </div>
+
+        <div class="thumb p-4" style="width: 180px;">Thumbnail</div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-6">
+      <div class="card-custom d-flex">
+        <div class="p-4 flex-grow-1">
+          <strong class="text-success d-block">Design</strong>
+          <h4 class="fw-bold mt-2">Post title</h4>
+          <small class="text-muted">Nov 11</small>
+          <p class="mt-3">
+            This is a wider card with supporting text below as a natural lead-in to additional content.
+          </p>
+          <a href="#" class="text-decoration-none">Continue reading →</a>
+        </div>
+
+        <div class="thumb p-4" style="width: 180px;">Thumbnail</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
