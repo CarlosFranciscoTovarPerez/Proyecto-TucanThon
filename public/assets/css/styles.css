@@ -1,0 +1,150 @@
+/* ==============================
+   PALETA DE COLORES
+   ============================== */
+:root {
+  --azul: #1D64F2;
+  --azul-oscuro: #123899;
+  --azul-claro: #E3EDFF;
+  --fondo-claro: #FFFFFF;
+  --texto-claro: #000000;
+
+  --fondo-oscuro: #001A33;
+  --texto-oscuro: #FFFFFF;
+  --azul-soft: #4D8DFF;
+  --card-oscura: #00264D;
+}
+
+/* ==============================
+   MODO CLARO
+   ============================== */
+.light-mode {
+  background: var(--fondo-claro);
+  color: var(--texto-claro);
+}
+
+.light-mode .custom-card {
+  background: var(--fondo-claro);
+  border: 1px solid #e0e0e0;
+}
+
+/* ==============================
+   MODO OSCURO
+   ============================== */
+.dark-mode {
+  background: var(--fondo-oscuro);
+  color: var(--texto-oscuro);
+}
+
+.dark-mode .custom-card {
+  background: var(--card-oscura) !important;
+  color: var(--texto-oscuro) !important;
+  border: 1px solid #003366;
+}
+
+.dark-mode .navbar,
+.dark-mode footer {
+  background: var(--azul-soft) !important;
+}
+
+.dark-mode select,
+.dark-mode input {
+  background: #003366;
+  color: white;
+  border: 1px solid #4D8DFF;
+}
+
+/* ==============================
+   NAVBAR
+   ============================== */
+.navbar-brand {
+  font-size: 1.4rem;
+}
+
+.navbar a {
+  font-weight: 500;
+}
+
+/* ==============================
+   HERO
+   ============================== */
+.hero-section {
+  background: linear-gradient(to bottom, #f8fbff, #ffffff);
+}
+
+/* ==============================
+   TITULOS DE SECCIÓN
+   ============================== */
+.section-title {
+  border-left: 6px solid var(--azul);
+  padding-left: 12px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* ==============================
+   CARDS MODERNAS
+   ============================== */
+.custom-card {
+  border-radius: 12px;
+  padding: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.custom-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+}
+
+/* ==============================
+   FORMULARIOS
+   ============================== */
+select, input {
+  border-radius: 8px;
+}
+
+button {
+  border-radius: 8px !important;
+  font-weight: bold;
+}
+
+/* ==============================
+   CHIPS
+   ============================== */
+.mini-chip {
+  display: inline-block;
+  background: var(--azul-claro);
+  color: var(--azul-oscuro);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin: 4px 4px 0 0;
+}
+
+.dark-mode .mini-chip {
+  background: #003366;
+  color: #cde3ff;
+}
+
+/* ==============================
+   ALERTA SIMULADA
+   ============================== */
+#alerta-chofer {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* ==============================
+   FOOTER
+   ============================== */
+footer {
+  font-size: 0.9rem;
+}
+
+/* ==============================
+   RESPONSIVE
+   ============================== */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+}

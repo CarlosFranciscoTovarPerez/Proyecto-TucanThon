@@ -1,0 +1,289 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InclusiRoute – Transporte Turístico Inclusivo</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="light-mode">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">InclusiRoute</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#que-es">¿Qué es?</a></li>
+        <li class="nav-item"><a class="nav-link" href="#turista">Turista</a></li>
+        <li class="nav-item"><a class="nav-link" href="#funciones">Funciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="#chofer">Chofer</a></li>
+        <li class="nav-item"><a class="nav-link" href="#demo">Demo</a></li>
+      </ul>
+
+      <button id="toggle-dark" class="btn btn-light ms-3">Modo oscuro</button>
+    </div>
+  </div>
+</nav>
+
+
+<!-- HERO -->
+<section class="py-5 bg-light text-dark hero-section">
+  <div class="container text-center">
+    <h1 class="display-5 fw-bold text-primary">InclusiRoute</h1>
+    <p class="lead mt-3">
+      Transporte turístico inteligente e inclusivo en Cancún.
+    </p>
+    <button onclick="scrollToSection('demo')" class="btn btn-primary btn-lg mt-3">🚍 Probar demo</button>
+  </div>
+</section>
+
+
+<!-- ¿QUÉ ES? -->
+<section id="que-es" class="container py-5">
+  <h2 class="section-title">¿Qué es InclusiRoute?</h2>
+  <p class="mt-3">
+    InclusiRoute permite que cualquier turista —extranjero, persona con discapacidad visual,
+    auditiva, verbal, movilidad reducida o adulto mayor— pueda usar el transporte público sin
+    necesidad de hablar español.
+  </p>
+</section>
+
+
+<!-- TURISTA -->
+<section id="turista" class="container py-5">
+  <h2 class="section-title">👤 Para el turista</h2>
+
+  <div class="row g-4 mt-1">
+    <div class="col-md-6">
+      <div class="card shadow-sm custom-card">
+        <div class="card-body">
+          <h5 class="card-title text-primary fw-bold">Seleccionar ruta</h5>
+          <ul>
+            <li>Elegir origen y destino</li>
+            <li>Ver qué camión tomar</li>
+            <li>Cuándo llega el transporte</li>
+            <li>En qué parada bajarse</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card shadow-sm custom-card">
+        <div class="card-body">
+          <h5 class="card-title text-primary fw-bold">Dentro del camión</h5>
+          <ul>
+            <li>Conexión automática al GPS</li>
+            <li>Modo accesible según la discapacidad</li>
+            <li>Alertas personalizadas</li>
+            <li>Todo sin hablar español</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- FUNCIONES EXTRA -->
+<section id="funciones" class="container py-5">
+  <h2 class="section-title">🔵 Funciones extra</h2>
+
+  <div class="row g-4 mt-1">
+    <div class="col-md-4">
+      <div class="card shadow custom-card h-100">
+        <div class="card-body">
+          <h5 class="card-title">🌎 Traducción en tiempo real</h5>
+          Traducción automática de señales, texto y anuncios.
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow custom-card h-100">
+        <div class="card-body">
+          <h5 class="card-title">👁‍🗨 Turistas ciegos</h5>
+          Vibración 200m antes, sonido 3D, SOS por voz.
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow custom-card h-100">
+        <div class="card-body">
+          <h5 class="card-title">👂 Turistas sordos</h5>
+          Alertas visuales + videos en LSM y ASL.
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow custom-card h-100">
+        <div class="card-body">
+          <h5 class="card-title">🧏 Turistas mudos</h5>
+          Mensajes automáticos enviados al chofer.
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow custom-card h-100">
+        <div class="card-body">
+          <h5 class="card-title">👴 Adultos mayores</h5>
+          Modo letra grande + rutas simplificadas.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- PANEL CHOFER -->
+<section id="chofer" class="container py-5">
+  <h2 class="section-title">🚌 Panel del chofer</h2>
+
+  <div class="card shadow custom-card mt-3 p-3">
+    <ul>
+      <li>Lista de pasajeros con destino</li>
+      <li>Íconos de discapacidad y lenguaje</li>
+      <li>Alertas automáticas antes de cada parada</li>
+      <li>Indica asistencia requerida (rampa, ayuda visual o auditiva)</li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- DEMO -->
+<section id="demo" class="container py-5">
+  <h2 class="section-title">4️⃣ Demo interactiva</h2>
+
+  <div class="row g-4 mt-1">
+
+    <!-- FORMULARIOS -->
+    <div class="col-md-5">
+      <div class="card shadow p-3 custom-card">
+
+        <h5 class="fw-bold text-primary">Registro del turista</h5>
+
+        <label class="mt-2">Nombre</label>
+        <input type="text" id="nombre" class="form-control" placeholder="Ej. Anna, John, María">
+
+        <label class="mt-2">Idioma</label>
+        <select id="idioma-registro" class="form-select">
+          <option>Inglés</option>
+          <option>Francés</option>
+          <option>Alemán</option>
+          <option>Portugués</option>
+          <option>LSM / ASL</option>
+        </select>
+
+        <label class="mt-2">Perfil</label>
+        <select id="perfil-registro" class="form-select">
+          <option>Sin discapacidad</option>
+          <option>Persona ciega</option>
+          <option>Persona sorda</option>
+          <option>Persona muda</option>
+          <option>Adulto mayor</option>
+          <option>Silla de ruedas</option>
+        </select>
+
+        <button id="btn-registrar" class="btn btn-secondary mt-3 w-100">Registrar turista</button>
+
+        <div id="registro-msg" class="small mt-1"></div>
+
+        <hr>
+
+        <h5 class="fw-bold text-primary">Configurar viaje</h5>
+
+        <label class="mt-2">Origen</label>
+        <select id="origen" class="form-select">
+          <option>Hotel Cancún</option>
+          <option>Zona Hotelera</option>
+          <option>Aeropuerto</option>
+          <option>Centro</option>
+        </select>
+
+        <label class="mt-3">Destino</label>
+        <select id="destino" class="form-select">
+          <option>Playa Delfines</option>
+          <option>El Rey</option>
+          <option>ADO</option>
+        </select>
+
+        <label class="mt-3">Idioma del viaje</label>
+        <select id="idioma" class="form-select">
+          <option>Inglés</option>
+          <option>Francés</option>
+          <option>Alemán</option>
+          <option>Portugués</option>
+          <option>LSM / ASL</option>
+        </select>
+
+        <label class="mt-3">Perfil del viaje</label>
+        <select id="perfil" class="form-select">
+          <option>Sin discapacidad</option>
+          <option>Persona ciega</option>
+          <option>Persona sorda</option>
+          <option>Persona muda</option>
+          <option>Adulto mayor</option>
+          <option>Silla de ruedas</option>
+        </select>
+
+        <button id="btn-generar" class="btn btn-primary mt-4 w-100">Generar ruta</button>
+        <button id="btn-alerta" class="btn btn-warning mt-2 w-100">Simular próxima parada</button>
+
+        <div id="alerta-chofer" class="alert alert-danger mt-3" style="display:none;">
+          🚨 Pasajero debe bajar en la siguiente parada.
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- RESULTADOS -->
+    <div class="col-md-7">
+      <div class="card shadow p-3 custom-card">
+        <h5 class="fw-bold text-primary">Resultado</h5>
+
+        <div class="row mt-2">
+          <div class="col-md-6">
+            <h6>👤 Turista</h6>
+            <div id="turista-resumen">Ingresa los datos para comenzar.</div>
+            <div id="turista-chips" class="mt-2"></div>
+          </div>
+
+          <div class="col-md-6">
+            <h6>🚌 Chofer</h6>
+            <div id="chofer-resumen">Aquí se visualizará la información.</div>
+            <div id="chofer-chips" class="mt-2"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<footer class="bg-primary text-center text-white py-3 mt-5">
+  InclusiRoute © 2025 – Prototipo de transporte inclusivo
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<!-- Lógica del sistema -->
+<script src="assets/js/main.js"></script>
+</body>
+</html>

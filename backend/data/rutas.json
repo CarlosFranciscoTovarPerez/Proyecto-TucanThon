@@ -1,0 +1,16 @@
+{
+  "rutas": [
+    {
+      "origen": "Hotel Canc\u00fan",
+      "destino": "Playa Delfines",
+      "ruta": "R-27",
+      "tiempo": "6 min"
+    },
+    {
+      "origen": "Centro",
+      "destino": "El Rey",
+      "ruta": "R-38",
+      "tiempo": "12 min"
+    }
+  ]
+}
